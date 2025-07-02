@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abhishek Raj - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      cursor: none;
+    }
+    body, html {
+      height: 100%;
+      scroll-behavior: smooth;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      overflow-x: hidden;
+    }
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      background: rgba(0,0,0,0.6);
+    }
+    header h1 {
+      font-size: 4rem;
+      animation: fadeIn 1s ease-in;
+    }
+    header p {
+      font-size: 1.5rem;
+      margin-top: 1rem;
+      animation: fadeIn 1s ease-in;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      z-index: 1000;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00eaff;
+    }
+    section {
+      padding: 100px 50px;
+      min-height: 100vh;
+      background: rgba(0,0,0,0.7);
+    }
+    .cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background: #00eaff;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
+    a.contact-link {
+      color: #00eaff;
+      text-decoration: underline;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="cursor" id="customCursor"></div>
+
+  <nav>
+    <a href="about.html">About</a>
+    <a href="experience.html">Experience</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Abhishek Raj Pagadala</h1>
+    <p>Cloud Infrastructure Developer/Support | DevOps Engineer & Data Analytics Enthusiast Student Pursuing Masters At Berlin</p>
+  </header>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      <a class="contact-link" href="mailto:pagadalaabhishek60@gmail.com">Email Me</a><br>
+      <a class="contact-link" href="https://www.linkedin.com/in/abhishek-raj-pagadala-57b388194" target="_blank">LinkedIn</a><br>
+      Phone: +49 17667239250<br>
+      Location: Berlin, Germany
+    </p>
+  </section>
+
+  <script>
+    const customCursor = document.getElementById("customCursor");
+    document.addEventListener("mousemove", (e) => {
+      customCursor.style.left = e.pageX + "px";
+      customCursor.style.top = e.pageY + "px";
+    });
+  </script>
+</body>
+</html>

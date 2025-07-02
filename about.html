@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About - Abhishek Raj</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      cursor: none;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_2560/https://www.reiner-sct.com/wp-content/uploads/45-KI-Sicherheit-Erfolgreiche-Nutzung-von-KI_AdobeStock_946065111.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      overflow-x: hidden;
+    }
+    .cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background: #00eaff;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
+    .content {
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 100px auto;
+      padding: 60px;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 234, 255, 0.2);
+      animation: fadeIn 1s ease-in;
+    }
+    a {
+      color: #00eaff;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="cursor" id="customCursor"></div>
+  <div class="content">
+    <h1>About Me</h1>
+    <p>
+      I'm Abhishek Raj Pagadala, a highly motivated and results-oriented DevOps Engineer with over 4 years of experience in cloud automation, infrastructure provisioning, and Azure DevOps. Currently pursuing a Master's in Data Analytics in Berlin, I'm expanding my expertise across two high-demand domains.
+    </p>
+    <p>
+      My professional journey includes designing, implementing, and managing robust and scalable cloud solutions using Terraform, Azure DevOps pipelines, and a variety of Azure services. I’ve worked extensively with CI/CD tools, Linux scripting, containerization with Docker and Kubernetes, and monitoring via Azure Monitor.
+    </p>
+    <p>
+      I’m passionate about solving real-world problems through automation, improving operational efficiency, and fostering DevOps culture in cross-functional teams. Beyond work, I enjoy mentoring peers, exploring new tech stacks, and playing cricket.
+    </p>
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+  <script>
+    const cursor = document.getElementById("customCursor");
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.pageX + "px";
+      cursor.style.top = e.pageY + "px";
+    });
+  </script>
+</body>
+</html>

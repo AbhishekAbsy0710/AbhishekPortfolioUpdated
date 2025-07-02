@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills - Abhishek Raj</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      cursor: none;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://s29814.pcdn.co/wp-content/uploads/2022/12/shutterstock_1847661151.jpg.optimal.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      overflow-x: hidden;
+    }
+    .cursor {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 20px;
+      height: 20px;
+      background: #00eaff;
+      border-radius: 50%;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      z-index: 9999;
+    }
+    .content {
+      background-color: rgba(0, 0, 0, 0.7);
+      margin: 100px auto;
+      padding: 60px;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 234, 255, 0.2);
+      animation: fadeIn 1s ease-in;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      animation: fadeIn 1s ease-in;
+    }
+    ul {
+      columns: 2;
+      list-style-type: disc;
+      font-size: 1.2rem;
+      line-height: 1.6;
+      animation: fadeIn 1s ease-in;
+      padding-left: 20px;
+    }
+    a {
+      color: #00eaff;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      ul {
+        columns: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="cursor" id="customCursor"></div>
+  <div class="content">
+    <h1>Skills</h1>
+    <ul>
+      <li>Terraform / Azure / Azure DevOps</li>
+      <li>CI/CD Pipelines</li>
+      <li>Python / Java / C++ / Shell</li>
+      <li>Docker / Kubernetes / Helm</li>
+      <li>ARM / Bash / PowerShell</li>
+      <li>HTML / CSS / JS / PHP</li>
+      <li>SQL / PostgreSQL / MongoDB</li>
+      <li>Git / Azure Monitor / Logic Apps</li>
+      <li>Hadoop / Spark / Hive</li>
+      <li>OCI / AWS / GCP</li>
+      <li>Machine Learning Algorithms / Big Data / Data Warehousing / Computer Vision</li>
+      <li>Tablue / PowerBi / Kafka</li>
+    </ul>
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+  <script>
+    const cursor = document.getElementById("customCursor");
+    document.addEventListener("mousemove", (e) => {
+      cursor.style.left = e.pageX + "px";
+      cursor.style.top = e.pageY + "px";
+    });
+  </script>
+</body>
+</html>
